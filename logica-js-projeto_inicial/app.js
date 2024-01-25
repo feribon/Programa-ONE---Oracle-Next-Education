@@ -13,4 +13,8 @@ while (chute !== numeroSecreto) {
   tentativas++;
   console.log(tentativas);
 }
-alert(`Voce acertou com ${tentativas} tentativas.`);
+alert(
+  `Voce acertou com ${tentativas} ${
+    tentativas == 1 ? "tentativa" : "tentativas"
+  }.`
+);
