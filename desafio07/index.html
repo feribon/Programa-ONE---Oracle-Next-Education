@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafio 07</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 07</title>
+  </head>
+  <body>
+    <ol>
+      <li onclick="imc(1.82,85)">
+        Crie uma função que calcule o índice de massa corporal (IMC) de uma
+        pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que
+        serão recebidos como parâmetro.
+      </li>
+      <label for="">
+        IMC(kg/m²)
+        <input type="number" id="imc" />
+      </label>
+      <li onclick="fatorial(5)">
+        Crie uma função que calcule o valor do fatorial de um número passado
+        como parâmetro.
+      </li>
+      <label for="">
+        Fatorial
+        <input type="number" id="fatorial" />
+      </label>
+      <li onclick="convertDollar(100)">
+        Crie uma função que converte um valor em dólar, passado como parâmetro,
+        e retorna o valor equivalente em reais. Para isso, considere a cotação
+        do dólar igual a R$4,80.
+      </li>
+      <label for="">
+        Dólar
+        <input type="text" id="dolar" />
+      </label>
+      <li onclick="perimetroQuad(10,25)">
+        Crie uma função que mostre na tela a área e o perímetro de uma sala
+        retangular, utilizando altura e largura que serão dadas como parâmetro.
+      </li>
+      <label for="">
+        Área
+        <input type="text" id="area1" />
+      </label>
+      <label for="">
+        Perímetro
+        <input type="text" id="perimetro1" />
+      </label>
+      <li onclick="perimetroRed(3)">
+        Crie uma função que mostre na tela a área e o perímetro de uma sala
+        circular, utilizando seu raio que será fornecido como parâmetro.
+        Considere Pi = 3,14.
+      </li>
+      <label for="">
+        Área
+        <input type="text" id="area2" />
+      </label>
+      <label for="">
+        Perímetro
+        <input type="text" id="perimetro2" />
+      </label>
+      <li onclick="tabuada(7)">
+        Crie uma função que mostre na tela a tabuada de um número dado como
+        parâmetro.
+      </li>
+      <p id="tabuada"></p>
+    </ol>
+    <script src="app.js"></script>
+  </body>
 </html>
