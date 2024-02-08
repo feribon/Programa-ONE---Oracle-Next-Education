@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 615px;
+  width: 50%
 }
 .apresentacao__conteudo__titulo {
   font-family: "Krona One", sans-serif;
@@ -60,13 +60,13 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
 }
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
   display: flex;
   justify-content: center;
   gap: 16px;
   border: 2px solid var(--cor-primaria);
   text-decoration: none;
-  width: 378px;
+  width: 50%;
   text-align: center;
   border-radius: 8px;
   padding: 21.5px 0;
@@ -77,6 +77,9 @@ body {
 }
 .apresentacao__links__link:hover {
   background-color: #272727;
+}
+.apresentacao__imagem{
+  width: 50%;
 }
 .rodape {
   padding: 24px;
