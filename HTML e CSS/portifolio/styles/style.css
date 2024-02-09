@@ -30,12 +30,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
 }
 .apresentacao__conteudo {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 50%
+  width: 50%;
 }
 .apresentacao__conteudo__titulo {
   font-family: "Krona One", sans-serif;
@@ -78,7 +79,7 @@ body {
 .apresentacao__links__link:hover {
   background-color: #272727;
 }
-.apresentacao__imagem{
+.apresentacao__imagem {
   width: 50%;
 }
 .rodape {
@@ -89,4 +90,20 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+  .cabecalho__menu {
+    justify-content: center;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao__conteudo{
+    width: auto;
+  }
 }
