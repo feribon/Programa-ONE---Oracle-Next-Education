@@ -1,6 +1,6 @@
 function criptografar() {
-  let criptografado = "";
   let entrada = document.querySelector("#entrada").value.toLowerCase();
+  let criptografado = "";
   for (i = 0; i < entrada.length; i++) {
     if (entrada[i] == "e") {
       criptografado += "enter";
@@ -27,4 +27,12 @@ function descriptografar() {
   saida = saida.replace(/ober/g, "o");
   saida = saida.replace(/ufat/g, "u");
   document.getElementById("entrada").value = saida;
+}
+
+function copia1() {
+  navigator.clipboard.writeText(document.getElementById("entrada").value);
+}
+
+function copia2() {
+  navigator.clipboard.writeText(document.getElementById("saida").value);
 }
